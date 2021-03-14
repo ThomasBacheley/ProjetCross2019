@@ -1,5 +1,5 @@
 # ProjetCross2019
-Le projet à été fait dans le cadre de la validation de la deuxième année de BTS SNIR.
+Le projet a été réalisé dans le cadre de la validation de la deuxième année de BTS SNIR.
 
 # BUT
 Chaque année, un cross est organisé à l'Institut Lemonnier.
@@ -11,11 +11,8 @@ Le but de ce projet est donc de créer une solution complète de chronométrage 
 Cette application s’adresse principalement à l’institut Lemonnier et particulièrement aux organisateurs du cross qui pourront bénéficier d’une meilleure gestion et suivie de leur futur Cross.  
 
 # Code
-Le code est principalement rédigé en C#, une DLL à été créée spécialement pour l'application ainsi qu'une base de données dont le script est disponible.
+Le code est principalement rédigé en C#, une DLL a été créée spécialement pour l'application ainsi qu'une base de données dont le [script](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/script.sql "script.sql") est disponible.
 
 # Données
-
  - [ListeEleve.xlsx](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/ListeEleve.xlsx "ListeEleve.xlsx") : contient la liste des élèves de l'établissement
  - [BACHELEY_THOMAS_U62_IR.zip](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/BACHELEY_THOMAS_U62_IR.zip "BACHELEY_THOMAS_U62_IR.zip") : compte rendu du projet ( partie commune et partie personnelle )
-
- la oui
