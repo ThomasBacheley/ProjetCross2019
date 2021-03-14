@@ -1,0 +1,24 @@
+C:\Users\thomas\Desktop\applis\cross_lite\ClassSQL\bin\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\applis\cross_lite\ClassSQL\bin\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\applis\cross_lite\ClassSQL\obj\Debug\ClassSQL.csprojAssemblyReference.cache
+C:\Users\thomas\Desktop\applis\cross_lite\ClassSQL\obj\Debug\ClassSQL.csproj.CoreCompileInputs.cache
+C:\Users\thomas\Desktop\applis\cross_lite\ClassSQL\obj\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\applis\cross_lite\ClassSQL\obj\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\Projet\cross_lite\ClassSQL\obj\Debug\ClassSQL.csproj.CoreCompileInputs.cache
+C:\Users\thomas\Desktop\Projet\cross_lite\ClassSQL\bin\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\Projet\cross_lite\ClassSQL\bin\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\Projet\cross_lite\ClassSQL\obj\Debug\ClassSQL.csprojAssemblyReference.cache
+C:\Users\thomas\Desktop\Projet\cross_lite\ClassSQL\obj\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\Projet\cross_lite\ClassSQL\obj\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\Projet\Applis save\cross_lite\ClassSQL\bin\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\Projet\Applis save\cross_lite\ClassSQL\bin\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\Projet\Applis save\cross_lite\ClassSQL\obj\Debug\ClassSQL.csproj.CoreCompileInputs.cache
+C:\Users\thomas\Desktop\Projet\Applis save\cross_lite\ClassSQL\obj\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\Projet\Applis save\cross_lite\ClassSQL\obj\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\Projet\Applis save\cross_lite\ClassSQL\obj\Debug\ClassSQL.csprojAssemblyReference.cache
+C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\bin\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\bin\Debug\ClassSQL.pdb
+C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.csprojAssemblyReference.cache
+C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.csproj.CoreCompileInputs.cache
+C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.dll
+C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.pdb

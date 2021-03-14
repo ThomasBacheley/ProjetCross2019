@@ -1,0 +1,81 @@
+﻿<Window x:Class="cross_lite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cross_lite"
+        mc:Ignorable="d"
+        Title="ChronoCross (Ver. Test)" Height="385" Width="1032" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Visibility="Visible" x:Name="grid_default" HorizontalAlignment="Left" Height="340" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5">
+            <Image HorizontalAlignment="Left" Source="logo.png" VerticalAlignment="Top"  Margin="0,20,0,-20"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="340" Margin="10,0,0,0" VerticalAlignment="Top" Width="220" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <Button x:Name="btn_voir_bdd" Content="Voir les Élèves dans la BDD" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="btn_voir_bdd_Click"/>
+            <Button x:Name="btn_add_eleve" Content="Ajouter un(e) Élève" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_add_eleve_Click"/>
+            <Button x:Name="btn_inscrire_eleve" Content="Inscrire Élève(s)" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="btn_inscrire_eleve_Click"/>
+            <Button x:Name="btn_voir_inscrit" Content="Voir les Inscrits" HorizontalAlignment="Left" Margin="10,276,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_voir_inscrit_Click"/>
+            <Button x:Name="btn_vide_bdd" Content="Vider BDD" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_vide_bdd_Click"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_voir_eleve" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <Label Content="Élèves :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <ListBox x:Name="lb_voir_eleve" HorizontalAlignment="Left" Height="280" Margin="10,41,0,0" VerticalAlignment="Top" Width="510"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_voir_classe" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <Label Content="Classes :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <ListBox x:Name="lb_voir_classe" HorizontalAlignment="Left" Height="280" Margin="10,41,0,0" VerticalAlignment="Top" Width="510"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_eleve_par_classe" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <Label Content="Classes :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <ListBox x:Name="lb_eleve_classe" HorizontalAlignment="Left" Height="280" Margin="10,41,0,0" VerticalAlignment="Top" Width="510"/>
+            <ComboBox x:Name="cb_classe" HorizontalAlignment="Left" Margin="80,13,0,0" VerticalAlignment="Top" Width="175" Height="23" SelectionChanged="Cb_classe_SelectionChanged"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_voir_inscrit" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <Label Content="Inscrits :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <ListBox x:Name="lb_voir_inscrits" HorizontalAlignment="Left" Height="280" Margin="10,41,0,0" VerticalAlignment="Top" Width="510"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_update_temps" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <TextBox x:Name="txtbox_tag_temp" HorizontalAlignment="Left" Height="23" Margin="125,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" MaxLength="10"/>
+            <Label Content="Le Tag :" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Height="35"/>
+            <ListBox x:Name="lb_updtate_temps" HorizontalAlignment="Left" Height="218" Margin="10,102,0,0" VerticalAlignment="Top" Width="510" Loaded="Lb_updtate_temps_Loaded"/>
+            <Button x:Name="btn_temps_up" Content="Update" HorizontalAlignment="Left" Margin="350,13,0,0" VerticalAlignment="Top" Width="100" Click="Btn_temps_up_Click"/>
+            <Slider x:Name="slider_hour" IsSnapToTickEnabled="True" ToolTip="{Binding ElementName=slider_hour, Path=Value}" HorizontalAlignment="Left" Margin="15,70,0,0" VerticalAlignment="Top" Minimum="0" Maximum="2" Width="160"/>
+            <Slider x:Name="slider_min" IsSnapToTickEnabled="True" ToolTip="{Binding ElementName=slider_min, Path=Value}" HorizontalAlignment="Left" Margin="183,70,0,0" VerticalAlignment="Top" Minimum="0" Maximum="59" Width="160"/>
+            <Slider x:Name="slider_seconde" IsSnapToTickEnabled="True" ToolTip="{Binding ElementName=slider_seconde, Path=Value}" HorizontalAlignment="Left" Margin="348,70,0,0" VerticalAlignment="Top" Minimum="0" Maximum="59" Width="160"/>
+            <Label Content="Heure" HorizontalAlignment="Left" Margin="69,44,0,0" VerticalAlignment="Top"/>
+            <Label Content="Minute" HorizontalAlignment="Left" Margin="240,44,0,0" VerticalAlignment="Top"/>
+            <Label Content="Seconde" HorizontalAlignment="Left" Margin="401,44,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="340" Margin="785,0,0,0" VerticalAlignment="Top" Width="220" Background="#FFF4F4F5">
+            <Button x:Name="btn_eleve_cl" Content="Obtenir les Élèves de la classe" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_eleve_cl_Click"/>
+            <Button x:Name="btn_voir_classe" Content="Voir les différentes Classes" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="btn_voir_classe_Click"/>
+            <Button x:Name="btn_update_temps" Content="Mettre à Jour les temps" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_update_temps_Click"/>
+            <Button x:Name="btn_voir_cl" IsEnabled="False" Content="Voir Classement" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_voir_cl_Click"/>
+            <Button x:Name="btn_rendre_badge" Content="Rendre les Badges" HorizontalAlignment="Left" Margin="10,276,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="Btn_rendre_badge_Click"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_voir_classement" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <Label Content="1ere Fille :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="1er Gars :" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="1er Personnel :" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtxbox_1_F" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="103,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <TextBox x:Name="txtxbox_1_G" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="103,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <TextBox x:Name="txtxbox_1_P" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="103,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <Label Content="1er Cadet :" HorizontalAlignment="Left" Margin="277,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="1er Junior :" HorizontalAlignment="Left" Margin="277,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="1er Minime :" HorizontalAlignment="Left" Margin="277,72,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtxbox_1_Cadet" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="370,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <TextBox x:Name="txtxbox_1_Junior" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="370,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <TextBox x:Name="txtxbox_1_Minime" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="370,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+            <ListBox x:Name="lb_classement" HorizontalAlignment="Left" Height="160" Margin="10,160,0,0" VerticalAlignment="Top" Width="510"/>
+            <Label Content="Générale" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Visibility="Hidden" x:Name="grid_rendre_badge" HorizontalAlignment="Left" Height="330" Margin="240,0,0,0" VerticalAlignment="Top" Width="530" Background="#FFF4F4F5" Grid.RowSpan="2">
+            <ListBox x:Name="lb_rendre_badge" HorizontalAlignment="Left" SelectionChanged="Lb_rendre_badge_SelectionChanged" Height="240" Margin="10,10,0,0" VerticalAlignment="Top" Width="510"/>
+            <Label Content="Tag :" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtbox_rendre_tag" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="60,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Button x:Name="btn_rendre" Content="Rendre" HorizontalAlignment="Left" Margin="290,282,0,0" VerticalAlignment="Top" Width="120" Click="Btn_rendre_Click"/>
+
+        </Grid>
+    </Grid>
+</Window>

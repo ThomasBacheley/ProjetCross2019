@@ -1,0 +1,23 @@
+﻿<Window x:Class="cross_lite.fen_inscription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cross_lite"
+        mc:Ignorable="d"
+        Title="Inscription" Height="355" Width="660" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,0,0,0" VerticalAlignment="Top" Width="625"/>
+        <ComboBox x:Name="cb_classe" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Margin="89,14,0,0" Loaded="Cb_classe_Loaded" SelectionChanged="Cb_classe_SelectionChanged"/>
+        <Label Content="Classe :" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="200" Margin="10,55,0,0" VerticalAlignment="Top" Width="625"/>
+        <ListBox x:Name="lb_eleve" HorizontalAlignment="Left" Height="190" Margin="15,60,0,0" VerticalAlignment="Top" Width="610"/>
+        <Button x:Name="btn_retour" Content="Retour" HorizontalAlignment="Left" Margin="392,16,0,0" VerticalAlignment="Top" Width="158" Click="Btn_retour_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,260,0,0" VerticalAlignment="Top" Width="625"/>
+        <Label Content="N° Dossard :" HorizontalAlignment="Left" Margin="15,270,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tag Badge :" HorizontalAlignment="Left" Margin="225,270,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_inscrire" Content="Inscrire l'Élève" HorizontalAlignment="Left" Margin="500,275,0,0" VerticalAlignment="Top" Width="120" Click="Btn_inscrire_Click"/>
+        <TextBox x:Name="txtbox_dossard" HorizontalAlignment="Left" Height="23" Margin="96,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtbox_tag" HorizontalAlignment="Left" Height="23" Margin="301,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" MaxLength="10"/>
+    </Grid>
+</Window>
