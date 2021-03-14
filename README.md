@@ -10,3 +10,10 @@ Le but de ce projet est donc de créer une solution complète de chronométrage 
 
 Cette application s’adresse principalement à l’institut Lemonnier et particulièrement aux organisateurs du cross qui pourront bénéficier d’une meilleure gestion et suivie de leur futur Cross.  
 
+# Code
+Le code est principalement rédigé en C#, une DLL à été créée spécialement pour l'application ainsi qu'une base de données dont le script est disponible.
+
+# Données
+
+ - [ListeEleve.xlsx](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/ListeEleve.xlsx "ListeEleve.xlsx") : contient la liste des élèves de l'établissement
+ - [BACHELEY_THOMAS_U62_IR.zip](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/BACHELEY_THOMAS_U62_IR.zip "BACHELEY_THOMAS_U62_IR.zip") : compte rendu du projet ( partie commune et partie personnelle )
