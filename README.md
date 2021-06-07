@@ -10,6 +10,19 @@ Le but de ce projet est donc de créer une solution complète de chronométrage 
 
 Cette application s’adresse principalement à l’institut Lemonnier et particulièrement aux organisateurs du cross qui pourront bénéficier d’une meilleure gestion et suivie de leur futur Cross.  
 
+# Interface
+L'application fonctionne sur une fenêtre avec des Grids qui changent en fonction des boutons :
+![main_window](https://raw.githubusercontent.com/ThomasBacheley/ProjetCross2019/master/main_window.png)  
+
+On peut ajouter des Élèves à la main , mais dans l'application finale, on peut les ajouter via un fichiers Excel :
+![students_window](https://raw.githubusercontent.com/ThomasBacheley/ProjetCross2019/master/add_student_window.png)
+
+Cette fenêtre permet d'afficher un chronomètre en temps réel avec les temps qui s'actualisent au passage des coureurs :
+![time_window](https://raw.githubusercontent.com/ThomasBacheley/ProjetCross2019/master/time_window.png)
+
+Le cahier des charges stipulés une fenêtre pour récupérer des classements en fonctions de plusieurs critères :
+![ranking_window](https://raw.githubusercontent.com/ThomasBacheley/ProjetCross2019/master/ranking_window.png)
+
 # Code
 Le code est principalement rédigé en C#, une DLL a été créée spécialement pour l'application ainsi qu'une base de données dont le [script](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/script.sql "script.sql") est disponible.
 
