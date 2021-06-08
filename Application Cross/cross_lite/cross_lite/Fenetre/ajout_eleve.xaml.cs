@@ -1,25 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using ClassSQL;
+using Microsoft.Win32;
+using Microsoft.Office.Interop.Excel;
 
 namespace cross_lite
 {
     /// <summary>
     /// Logique d'interaction pour ajout_eleve.xaml
     /// </summary>
-    public partial class ajout_eleve : Window
+    public partial class ajout_eleve : System.Windows.Window
     {
         public ajout_eleve()
         {
@@ -101,6 +92,34 @@ namespace cross_lite
                 MessageBox.Show(txtb_nom_perso.Text.ToUpper() + " " + txtb_prenom_perso.Text + " à bien était ajouter a la BDD");
                 txtb_nom_perso.Text = "";
                 txtb_prenom_perso.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_lecture_excel_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "Excel File (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                if (openFileDialog.ShowDialog() == true)
+                {
+
+                    Microsoft.Office.Interop.Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
+                    Workbook xlWorkbook = xlApp.Workbooks.Open(openFileDialog.FileName);
+                    _Worksheet xlWorksheet = xlWorkbook.Sheets[1];
+                    Range xlRange = xlWorksheet.UsedRange;
+
+                    MessageBox.Show("Lignes:\n"+xlRange.Rows.Count.ToString()+"\nColonnes:\n"+ xlRange.Columns.Count.ToString()+"\n[5][1]:\n"+ xlRange.Cells[5, 1].Value2.ToString(), "Stats");
+
+
+
+                    //Read the contents of the file into a stream
+                }
             }
             catch (Exception ex)
             {
