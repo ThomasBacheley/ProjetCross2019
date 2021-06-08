@@ -28,3 +28,7 @@ Le code est principalement rédigé en C#, une DLL a été créée spécialement
 # Données
  - [ListeEleve.xlsx](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/ListeEleve.xlsx "ListeEleve.xlsx") : contient la liste des élèves de l'établissement
  - [BACHELEY_THOMAS_U62_IR.zip](https://github.com/ThomasBacheley/ProjetCross2019/blob/main/BACHELEY_THOMAS_U62_IR.zip "BACHELEY_THOMAS_U62_IR.zip") : compte rendu du projet ( partie commune et partie personnelle )
+
+ # Annexes
+
+ Une version où l'application peut lire la liste depuis un fichier excel est disponible [ici](https://github.com/ThomasBacheley/ProjetCross2019/tree/update_app)
