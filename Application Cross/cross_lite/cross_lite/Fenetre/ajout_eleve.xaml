@@ -32,7 +32,7 @@
             <Button x:Name="btn_enregistrer" Content="Enregistrer" HorizontalAlignment="Left" Margin="105,190,0,0" VerticalAlignment="Top" Width="110" Click="Btn_enregistrer_Click" TabIndex="8"/>
             <ComboBox HorizontalContentAlignment="Center" x:Name="cb_up" HorizontalAlignment="Left" Margin="132,139,0,0" VerticalAlignment="Top" Width="110" Loaded="Cb_up_Loaded" TabIndex="6"/>
         </Grid>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28" Margin="330,3,0,0" VerticalAlignment="Top" Width="145"/>
+        <Rectangle HorizontalAlignment="Left" Height="28" Margin="330,3,0,0" VerticalAlignment="Top" Width="145"/>
         <Slider x:Name="sld_prof_el" HorizontalAlignment="Left" TickFrequency="1"  Margin="374,8,0,0" VerticalAlignment="Top" IsSnapToTickEnabled="True" Width="32" Minimum="0" Maximum="1" ValueChanged="Sld_prof_el_ValueChanged" TabIndex="8" />
         <Label Content="Élève" HorizontalAlignment="Left" Margin="331,2,0,0" VerticalAlignment="Top"/>
         <Label Content="Personnel" HorizontalAlignment="Left" Margin="411,2,0,0" VerticalAlignment="Top"/>

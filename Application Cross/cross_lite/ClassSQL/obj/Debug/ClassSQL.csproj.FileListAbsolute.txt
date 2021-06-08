@@ -22,3 +22,8 @@ C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\C
 C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.csproj.CoreCompileInputs.cache
 C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.dll
 C:\Users\thomas\Desktop\Projet\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.pdb
+C:\Users\Asus\Desktop\ProjetCross2019\Application Cross\cross_lite\ClassSQL\bin\Debug\ClassSQL.dll
+C:\Users\Asus\Desktop\ProjetCross2019\Application Cross\cross_lite\ClassSQL\bin\Debug\ClassSQL.pdb
+C:\Users\Asus\Desktop\ProjetCross2019\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\ProjetCross2019\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.dll
+C:\Users\Asus\Desktop\ProjetCross2019\Application Cross\cross_lite\ClassSQL\obj\Debug\ClassSQL.pdb
